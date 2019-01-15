@@ -16,6 +16,39 @@ FSJS project 1 - A Random Quote Generator
       quote object.
 ***/
 
+// Added array with quote objects 
+let quotes = [
+  {
+    quote: 'If you try and take a cat apart to see how it works, the first thing you have on your hands is a nonworking cat.',
+    source: 'Douglas Adams',
+    year: 2002,
+    citation: 'The Salmon of Doubt'
+  },
+  {
+    quote: 'If A is success in life, then A = x + y + z. Work is x, play is y and z is keeping your mouth shut.',
+    source: 'Albert Einstein',
+    year: 1929,
+    citation: 'The Ultimate Quotable Einstein'
+  },
+  {
+    quote: 'To describe externals, you become a scientist. To describe experience, you become an artist.',
+    source: 'Timothy Leary',
+    year: 1982,
+    citation: 'Changing My Mind, Among Others'
+  },
+  {
+    quote: 'It is better to risk sparing a guilty person than to condemn an innocent one.',
+    source: 'Voltaire',
+    year: 1747,
+    citation: 'Zadig'
+  },
+  {
+    quote: 'The future is already here — it\'s just not very evenly distributed.',
+    source: 'William Gibson',
+    year: 1993,
+    citation: 'Fresh Air, NPR'
+  }
+];
 
 
 
