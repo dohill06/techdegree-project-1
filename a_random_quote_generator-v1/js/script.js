@@ -78,6 +78,14 @@ function getRandomQuote(array) {
      they are added to the HTML string.
    - set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
+
+function randomColor() {
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  var rbgColor = 'rgb(' + x + ',' + y + ',' + z + ')';
+  document.body.style.background = rbgColor;
+}
 // Created the printQuote function to print a random quote to the screen
 function printQuote() {
   let randomQuote = getRandomQuote(quotes);
@@ -85,7 +93,7 @@ function printQuote() {
   message = '<p class="quote">' + randomQuote.quote + '</p>';
   message += '<p class="source">' + randomQuote.source;
   if (randomQuote.occupation) {
-    message += '<span class="occupation">' + ', ' + randomQuote.occupation + '</span>'
+    message += '<span class="occupation">' + ', ' + randomQuote.occupation + '</span>';
   }
   if (randomQuote.citation) {
     message += '<span class="citation">' + randomQuote.citation + '</span >';
@@ -93,7 +101,7 @@ function printQuote() {
   if (randomQuote.year) {
     message += '<span class="year">' + randomQuote.year + '</span></p >';
   } 
-  
+  randomColor();
   document.getElementById('quote-box').innerHTML = message;
 }
 
