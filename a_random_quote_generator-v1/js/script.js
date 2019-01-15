@@ -58,8 +58,12 @@ let quotes = [
    - use the random number to `return` a random quote object from the 
      `quotes` array.
 ***/
+// Created the getRandomQuote function to generate a random #/index
 
-
+function getRandomQuote(array) {
+  i = Math.floor(Math.random() * 5);
+  return array[i];
+}
 
 
 /***
