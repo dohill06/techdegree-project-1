@@ -75,8 +75,17 @@ function getRandomQuote(array) {
      they are added to the HTML string.
    - set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
-
-
+// Created the printQuote function to print a random quote to the screen
+function printQuote() {
+  let randomQuote = getRandomQuote(quotes);
+  let message = '';
+  message = '<p class="quote">' + randomQuote.quote + '</p>';
+  message += '<p class="source">' + randomQuote.source + '</p>';
+     /* < span class="citation" > [citation here] </span >
+        <span class="year"> [year here] </span>
+</p >'*/
+  document.getElementById('quote-box').innerHTML = message;
+}
 
 
 /***
