@@ -80,10 +80,13 @@ function printQuote() {
   let randomQuote = getRandomQuote(quotes);
   let message = '';
   message = '<p class="quote">' + randomQuote.quote + '</p>';
-  message += '<p class="source">' + randomQuote.source + '</p>';
-     /* < span class="citation" > [citation here] </span >
-        <span class="year"> [year here] </span>
-</p >'*/
+  message += '<p class="source">' + randomQuote.source;
+  if (randomQuote.citation) {
+    message += '<span class="citation">' + randomQuote.citation + '</span >';
+  }   
+  if (randomQuote.year) {
+    message += '<span class="year">' + randomQuote.year + '</span></p >';
+  }  
   document.getElementById('quote-box').innerHTML = message;
 }
 
