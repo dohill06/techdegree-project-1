@@ -83,8 +83,8 @@ function randomColor() {
   var x = Math.floor(Math.random() * 256);
   var y = Math.floor(Math.random() * 256);
   var z = Math.floor(Math.random() * 256);
-  var rbgColor = 'rgb(' + x + ',' + y + ',' + z + ')';
-  document.body.style.background = rbgColor;
+  var rgbColor = 'rgb(' + x + ',' + y + ',' + z + ')';
+  document.body.style.background = rgbColor;
 }
 // Created the printQuote function to print a random quote to the screen
 function printQuote() {
@@ -103,7 +103,9 @@ function printQuote() {
   } 
   randomColor();
   document.getElementById('quote-box').innerHTML = message;
+  setInterval(function () { printQuote() }, 10000);
 }
+
 
 
 /***
