@@ -103,10 +103,9 @@ function printQuote() {
   } 
   randomColor();
   document.getElementById('quote-box').innerHTML = message;
-  setInterval(function () { printQuote() }, 10000);
 }
 
-
+setInterval(function(){printQuote()}, 10000);
 
 /***
   When the "Show another quote" button is clicked, the event listener 
