@@ -1,4 +1,4 @@
-Random Quote Generator
+# Random Quote Generator
 
 View the demo https://dohill06.github.io/techdegree-project-1/
 
